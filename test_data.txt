@@ -1,0 +1,45 @@
+How to run application:
+
+cd toy-robot-simulator
+bundle install
+ruby script.rb
+
+How to run tests:
+
+rspec spec
+
+How to exit application:
+
+EXIT
+
+Example Input and Output:
+
+1),
+PLACE 0,0,NORTH
+MOVE
+REPORT
+OUTPUT: 0,1,NORTH
+
+2),
+PLACE 5,5,NORTH
+Invalid position
+
+3),
+PLACE 0,0,NORTH
+LEFT
+REPORT
+Output: 0,0,WEST
+
+4),
+PLACE 0,0,WEST
+MOVE
+Cannot move any further from this direction.
+
+5),
+PLACE 1,2,NORTH
+MOVE
+RIGHT
+MOVE
+MOVE
+REPORT
+Output 3,3,EAST
